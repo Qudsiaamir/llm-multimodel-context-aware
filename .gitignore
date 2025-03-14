@@ -5,7 +5,10 @@ __pycache__/
 
 # C extensions
 *.so
-
+uploads/*
+logs/*
+*Zone.Identifier
+caption_model*
 # Distribution / packaging
 .Python
 build/
