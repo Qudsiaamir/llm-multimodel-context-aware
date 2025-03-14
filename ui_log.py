@@ -186,7 +186,11 @@ def rewrite_response_with_mistral(response, image_caption, similar_caption, pdf_
     Uses the Mistral large language model to clean the response by removing
     references to sensitive input sources.
     """
+<<<<<<< HEAD
     llm = ChatMistralAI(model_name="mistral-large-latest", api_key="API KEY")
+=======
+    llm = ChatMistralAI(model_name="mistral-large-latest", api_key="fboMWqVftJGyKP2LjvHbdGFbvUSjDVVA")
+>>>>>>> acac438b14e51ed2518f6828b8b30cb9457868d2
 
     system_prompt = """
     You are an AI post-processing assistant. Your task is to clean a response 

@@ -55,6 +55,7 @@ def save_history(history):
 # -------------------------------------------------------------------
 # 1) Set up your API key (replace with your real key)
 # -------------------------------------------------------------------
+<<<<<<< HEAD
 openai.api_key = "API KEY"
 
 from mistralai import Mistral
@@ -62,6 +63,15 @@ api_key = "API KEY"
 model = "mistral-large-latest"
 # Set your API key
 os.environ["MISTRAL_API_KEY"] = "API KEY"
+=======
+openai.api_key = "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"
+
+from mistralai import Mistral
+api_key = "fboMWqVftJGyKP2LjvHbdGFbvUSjDVVA"
+model = "mistral-large-latest"
+# Set your API key
+os.environ["MISTRAL_API_KEY"] = "fboMWqVftJGyKP2LjvHbdGFbvUSjDVVA"
+>>>>>>> acac438b14e51ed2518f6828b8b30cb9457868d2
 client = Mistral(api_key=api_key)
 # model = "mistral-large-latest"
 # chat_response = client.chat.complete(
@@ -186,7 +196,11 @@ def rewrite_response_with_mistral(response, image_caption, similar_caption, pdf_
     Uses the Mistral large language model to clean the response by removing
     references to sensitive input sources.
     """
+<<<<<<< HEAD
     llm = ChatMistralAI(model_name="mistral-large-latest", api_key="API KEY")
+=======
+    llm = ChatMistralAI(model_name="mistral-large-latest", api_key="fboMWqVftJGyKP2LjvHbdGFbvUSjDVVA")
+>>>>>>> acac438b14e51ed2518f6828b8b30cb9457868d2
 
     system_prompt = """
     You are an AI post-processing assistant. Your task is to clean a response 
